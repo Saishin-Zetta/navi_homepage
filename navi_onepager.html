@@ -1,0 +1,348 @@
+<!--
+  Navi - One Page Landing Website
+  This page refactors the original Bootstrap portfolio template into a clean one‑pager for the Navi project.
+  It uses the same vendor CSS files and custom style sheet to preserve the look and feel, while
+  completely overhauling the content to speak to Navi’s private AI infrastructure offering.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Navi – Private AI Infrastructure</title>
+  <meta content="Navi empowers organisations to deploy self‑hosted AI with full control and privacy." name="description">
+  <meta content="private AI, self hosted LLM, secure AI, enterprise AI platform" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- We reuse the same Bootstrap and icon styles that powered the original portfolio -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main template CSS (from the original project) -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Custom overrides for Navi -->
+  <style>
+    /* Hero section: override the template’s background image with a modern gradient */
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      position: relative;
+    }
+
+    #hero:before {
+      /* Remove the dark overlay from the original template */
+      display: none;
+    }
+
+    #hero .hero-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 64px;
+      font-family: "Satisfy", serif;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    #hero h2 {
+      font-size: 18px;
+      color: #eee;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    #hero .btn-get-started {
+      margin-top: 40px;
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 50px;
+      background: #ffb727;
+      color: #fff;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    #hero .btn-get-started:hover {
+      background: #ffc85a;
+      color: #fff;
+    }
+
+    /* Navi sections */
+    .section-title span {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #aaa;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #3b434a;
+    }
+
+    /* Features (services) custom icons colours to better reflect privacy and tech */
+    .features .icon i {
+      color: #2cbdee;
+    }
+
+    .features .icon-box:hover {
+      border-color: #2cbdee;
+    }
+
+    .cta {
+      background: #f7f9fc;
+    }
+
+    .cta h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #3b434a;
+    }
+
+    .cta .cta-btn {
+      background: #ffb727;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .cta .cta-btn:hover {
+      background: #ffc85a;
+      color: #fff;
+    }
+
+    footer {
+      background: #16181b;
+      padding: 40px 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer .social-links a {
+      color: #ffb727;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    footer .social-links a:hover {
+      color: #ffc85a;
+    }
+
+    /* Contact form styling */
+    #contact .form-control {
+      border-radius: 4px;
+      box-shadow: none;
+      border-color: #ced4da;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#features">Features</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Navi</h1>
+      <h2>Private AI infrastructure for teams who value privacy and control</h2>
+      <a href="#contact" class="btn-get-started scrollto">Book a 15‑minute call</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <span>About</span>
+          <h2>About</h2>
+          <p>Learn what sets Navi apart from other AI platforms</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <p>
+              <strong>Navi</strong> is a private AI infrastructure platform designed for organisations that require
+              complete control over their data and models. Unlike cloud‑hosted AI solutions, Navi lets you deploy and
+              run large language models within your own VPC or on‑premise environment. All traffic stays within your
+              trusted network, ensuring compliance with the most stringent security policies.
+            </p>
+            <p>
+              Built by engineers who understand the challenges of operationalising AI in regulated environments, Navi
+              provides intuitive tooling for spinning up containers, observing usage, and integrating multiple model
+              providers. Your sensitive data never leaves your walls, and you maintain full governance over how models
+              are used and audited.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="services features">
+      <div class="container">
+        <div class="section-title">
+          <span>Features</span>
+          <h2>Features</h2>
+          <p>The core capabilities that make Navi the foundation for your private AI strategy</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-box-seam"></i></div>
+              <h4 class="title"><a href="#">Self‑Hosted LLM Containers</a></h4>
+              <p class="description">Spin up and manage large language model containers in your own infrastructure,
+                keeping proprietary data under your control.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-shield-lock"></i></div>
+              <h4 class="title"><a href="#">End‑to‑End Encryption</a></h4>
+              <p class="description">Every session and log is encrypted at rest and in transit, offering complete
+                confidentiality and auditability.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-stack"></i></div>
+              <h4 class="title"><a href="#">Multi‑Provider Support</a></h4>
+              <p class="description">Switch between model providers such as OpenAI, Anthropic and open‑source models
+                without changing your integration.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-speedometer"></i></div>
+              <h4 class="title"><a href="#">Scalable &amp; Observable</a></h4>
+              <p class="description">Auto‑provision containers to match demand and observe usage metrics to optimise
+                performance and cost.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Ready to take control of your AI?</h3>
+            <p>
+              Join the companies that are already deploying private AI to transform their products while
+              preserving confidentiality. Reach out to us to schedule a live demo and discover how Navi can work
+              for you.
+            </p>
+            <a class="cta-btn" href="#contact">Get started</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p>We'd love to hear from you. Use the form below to get in touch.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>hello@navi-ai.io</p>
+            </div>
+            <div class="info-box mb-4">
+              <i class="bi bi-phone"></i>
+              <h3>Call Us</h3>
+              <p>+1 800 123 4567</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form action="#" method="post" class="php-email-form">
+              <div class="row gy-2 gx-md-2">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="company" id="company" placeholder="Company">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center mt-3"><button type="submit" class="btn btn-primary">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <h3>Navi</h3>
+      <p>Empowering teams with secure, private AI. Your data, your models, your rules.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="github"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; <span id="year"></span> <strong><span>Navi</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <!-- Include Bootstrap JS for optional interactive components such as nav toggles -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script>
+    // Dynamically insert current year into the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
